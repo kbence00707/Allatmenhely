@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Állatmenhely</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="brandname">
+                <span>Állatmenhely</span>
+            </div>
+            <nav>
+                <a href="#animal">Állatok</a>
+                <a href="#time">Időpontfoglalás</a>
+                <a href="login">Dolgozói felület</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-contant">
+                <div>
+                    <span class="maintitle"> Adj neki egy új esélyt</span>
+                    <h1>Találd meg az új társadat ezen a helyen</h1>
+                    <p>Keres az oldalon élő állatok között és amint megtaláltalad az új tárasad, majd ne fél időpontott foglani, hogy személyesen is tud találkozni vele.</p>
+                    <a class="button" href="#animal">Állatok megtekintése</a>                </div>
+                <div class="intro_img">
+                    <img src="pictures/kutya.jpg" alt="Kutya">
+                </div>
+            </div>
+        </section>
+
+        <section id="animal" class="animals">
+            <div class="animals_container">
+                <div class="container_title">
+                    <div>
+                        <span class="animals_container_header">
+                            Örökbefogadás
+                        </span>
+                        <h2>Gazdira váró állatok</h2>
+                    </div>
+                    <div class="filter"><input class="search" type="search" placeholder="Keresés név alapján">
+                    <select id="typefilter"><option value="all">Minden állat</option><option value="dogs">Kutyák</option><option value="cats">Macskák</option><option value="other">Mások</option></select>
+                    </div>
+                </div>
+                <div id="animals_grid" class="animals_container_grid">
+                </div>
+            </div>
+        </section>
+
+        <section id="time" class="time_container_light">
+            <div class="time_container_layout">
+                <div>
+                    <span class="meeting_title">Személyes találkozó</span>
+                    <h2>Időpontfoglalás</h2>
+                    <p>Válaszon ki egy önnek megfelő időpontot és a választot kis kedvencét. A foglalás után a munkatársaink látni fogják önt a rendszerben és várni fogják önt.</p>
+                </div>
+                    <form id="booking" class="booking_form">
+                        <label>Neve <input id="visitor_name" type="text" required></label>
+                        <label>E-mail <input id="visitor_email" type="email" required></label>
+                        <label>Választott állat <select id="animalselect" required> <option value="">Válassz állatot</option></select></label>
+                        <div class="column_two">
+                            <label>Dátum <input id="booking_date" type="date" required></label>
+                            <label>időpont <input id="booking_time" type="time" required></label>
+                        </div>
+                        <button class="button" type="submit">Időpont lefoglalása</button>
+                        <p id="booking_message" class="message"></p>
+                    </form>
+            </div>
+        </section>
+    </main>
+    <div id="cenzur" class="cenzur"></div>
+    <script src="script.js"></script>
+</body>
+</html>

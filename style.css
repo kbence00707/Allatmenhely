@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #333333;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brandname {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.brandname span {
+    color: #4f7d4f;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4f7d4f;
+}
+.intro {
+    background-color: #eef5ee;
+    padding: 80px 20px;
+}
+
+.intro-contant {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.maintitle {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #4f7d4f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.intro h1 {
+    color: #2f3d2f;
+
+    font-size: 46px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.intro p {
+    max-width: 650px;
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+}
+.intro_img {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.intro_img img {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #4f7d4f;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3f663f;
+}
+.animals {
+    padding: 70px 20px;
+
+    background-color: white;
+}
+
+.animals_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container_title {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+.animals_container_header {
+    display: block;
+
+    color: #4f7d4f;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.animals h2 {
+    color: #2f3d2f;
+
+    font-size: 36px;
+}
+.filter {
+    display: flex;
+    gap: 10px;
+}
+
+.search,
+#typefilter {
+    padding: 12px 15px;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-size: 15px;
+}
+
+.search {
+    width: 220px;
+}
+
+#typefilter {
+    width: 150px;
+}
+.animals_container_grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.animal_card {
+    background-color: white;
+
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s;
+}
+
+.animal_card:hover {
+    transform: translateY(-5px);
+}
+
+.animal_card img {
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+.animal_card_text {
+    padding: 20px;
+}
+
+.animal_card h3 {
+    color: #2f3d2f;
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+.animal_card p {
+    margin-bottom: 8px;
+}
+.time_container_light {
+    padding: 70px 20px;
+
+    background-color: #f1f6f1;
+}
+
+.time_container_layout {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+.meeting_text {
+    padding-top: 10px;
+}
+
+.meeting_title {
+    display: block;
+
+    color: #4f7d4f;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.time_container_layout h2 {
+    color: #2f3d2f;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.time_container_layout p {
+    font-size: 16px;
+}
+.booking_form {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.booking_form label {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    font-weight: bold;
+}
+
+.booking_form input,
+.booking_form select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+.booking_form input:focus,
+.booking_form select:focus {
+    outline: none;
+
+    border-color: #4f7d4f;
+}
+.column_two {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+@media (max-width: 900px) {
+
+    .intro-contant {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .intro p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container_title {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .animals_container_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .time_container_layout {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+
+    .navigation {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .intro {
+        padding: 50px 20px;
+    }
+
+    .intro h1 {
+        font-size: 34px;
+    }
+
+    .intro_img img {
+        height: 250px;
+    }
+
+    .animals {
+        padding: 50px 20px;
+    }
+
+    .animals h2 {
+        font-size: 30px;
+    }
+
+    .filter {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .search,
+    #typefilter {
+        width: 100%;
+    }
+
+    .animals_container_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .time_container_layout {
+        gap: 30px;
+    }
+
+    .booking_form {
+        padding: 20px;
+    }
+
+    .column_two {
+        grid-template-columns: 1fr;
+    }
+}
