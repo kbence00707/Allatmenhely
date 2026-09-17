@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgozói felület - Állatmenhely</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="brandname">
+                <span>Állatmenhely</span> <small class="brand_sub">dolgozói felület</small>
+            </div>
+            <nav>
+                <a href="#appointments">Időpontok</a>
+                <a href="#animals_admin">Állatok</a>
+                <a href="index.html">Nyilvános oldal</a>
+                <span id="current_user" class="nav_user"></span>
+                <button id="logout_button" class="button button_small button_secondary" type="button">Kijelentkezés</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== Appointments ===== -->
+        <section id="appointments" class="admin_section">
+            <div class="admin_container">
+                <div class="container_title">
+                    <div>
+                        <span class="animals_container_header">Látogatások</span>
+                        <h2>Időpontfoglalások</h2>
+                    </div>
+                    <div class="filter">
+                        <select id="appointment_period">
+                            <option value="upcoming">Mai és közelgő</option>
+                            <option value="all">Összes (múltbeli is)</option>
+                        </select>
+                        <select id="appointment_status">
+                            <option value="">Minden állapot</option>
+                            <option value="pending">Függőben</option>
+                            <option value="confirmed">Megerősítve</option>
+                            <option value="completed">Teljesítve</option>
+                            <option value="cancelled">Lemondva</option>
+                        </select>
+                    </div>
+                </div>
+                <p id="appointments_message" class="message"></p>
+                <div class="table_wrap">
+                    <table class="data_table">
+                        <thead>
+                            <tr>
+                                <th>Dátum</th>
+                                <th>Idő</th>
+                                <th>Látogató</th>
+                                <th>Állat</th>
+                                <th>Megjegyzés</th>
+                                <th>Állapot</th>
+                                <th>Műveletek</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appointments_table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Animals ===== -->
+        <section id="animals_admin" class="admin_section admin_section_light">
+            <div class="admin_container">
+                <div class="container_title">
+                    <div>
+                        <span class="animals_container_header">Nyilvántartás</span>
+                        <h2>Állatok kezelése</h2>
+                    </div>
+                    <button id="new_animal_button" class="button" type="button">+ Új állat</button>
+                </div>
+                <p id="animals_message" class="message"></p>
+                <div class="table_wrap">
+                    <table class="data_table">
+                        <thead>
+                            <tr>
+                                <th>Név</th>
+                                <th>Faj</th>
+                                <th>Fajta</th>
+                                <th>Kor</th>
+                                <th>Nem</th>
+                                <th>Állapot</th>
+                                <th>Műveletek</th>
+                            </tr>
+                        </thead>
+                        <tbody id="animals_table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="cenzur" class="cenzur"></div>
+    <script src="common.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

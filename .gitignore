@@ -1,0 +1,6 @@
+# Local configuration with passwords - never upload to GitHub
+backend/.env
+
+# Operating system files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Nincs kép">
+  <rect width="400" height="300" fill="#eef5ee"/>
+  <g fill="#4f7d4f" opacity="0.55">
+    <ellipse cx="200" cy="175" rx="42" ry="36"/>
+    <ellipse cx="148" cy="128" rx="17" ry="23" transform="rotate(-20 148 128)"/>
+    <ellipse cx="183" cy="104" rx="17" ry="24" transform="rotate(-6 183 104)"/>
+    <ellipse cx="217" cy="104" rx="17" ry="24" transform="rotate(6 217 104)"/>
+    <ellipse cx="252" cy="128" rx="17" ry="23" transform="rotate(20 252 128)"/>
+  </g>
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4f7d4f">Nincs még fénykép</text>
+</svg>

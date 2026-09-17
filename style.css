@@ -342,6 +342,277 @@ nav a:hover {
 
     gap: 15px;
 }
+/* ===================================================================
+   Added for the backend integration: messages, badges, popup window,
+   booking textarea, login page and staff (admin) page.
+   =================================================================== */
+
+.message {
+    font-weight: bold;
+}
+
+.message.success {
+    color: #2e6b2e;
+}
+
+.message.error {
+    color: #b3261e;
+}
+
+.booking_form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.booking_form textarea:focus {
+    outline: none;
+    border-color: #4f7d4f;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.button_small {
+    padding: 7px 14px;
+    font-size: 14px;
+}
+
+.button_secondary {
+    background-color: white;
+    color: #4f7d4f;
+    border: 1px solid #4f7d4f;
+}
+
+.button_secondary:hover {
+    background-color: #eef5ee;
+}
+
+.button_danger {
+    background-color: #b3261e;
+}
+
+.button_danger:hover {
+    background-color: #8c1d18;
+}
+
+.animal_card {
+    cursor: pointer;
+}
+
+.badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status_available {
+    background-color: #dcefdc;
+    color: #2e6b2e;
+}
+
+.status_reserved {
+    background-color: #fff1cc;
+    color: #7a5a00;
+}
+
+.status_adopted {
+    background-color: #e4e4e4;
+    color: #555555;
+}
+
+/* Popup window: the dark overlay is the existing <div id="cenzur"> */
+.cenzur {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+}
+
+.cenzur.open {
+    display: flex;
+}
+
+body.modal_open {
+    overflow: hidden;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.modal h2 {
+    color: #2f3d2f;
+    margin-bottom: 10px;
+}
+
+.modal .booking_form {
+    padding: 0;
+    box-shadow: none;
+}
+
+.modal_close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    color: #555555;
+}
+
+.modal_image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.details_list {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 4px 15px;
+    margin: 10px 0 15px;
+}
+
+.details_list dt {
+    font-weight: bold;
+}
+
+.modal_description {
+    margin-bottom: 20px;
+}
+
+/* Login page */
+.login_page {
+    min-height: 70vh;
+    padding: 60px 20px;
+    background-color: #eef5ee;
+}
+
+.login_form {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.login_form h2 {
+    color: #2f3d2f;
+}
+
+/* Staff page */
+.brand_sub {
+    font-size: 15px;
+    color: #777777;
+    font-weight: normal;
+}
+
+nav {
+    align-items: center;
+}
+
+.nav_user {
+    color: #777777;
+}
+
+.admin_section {
+    padding: 50px 20px;
+}
+
+.admin_section_light {
+    background-color: #f1f6f1;
+}
+
+.admin_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin_section h2 {
+    color: #2f3d2f;
+    font-size: 32px;
+}
+
+.admin_section .container_title {
+    margin-bottom: 20px;
+}
+
+.admin_section .filter select {
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.table_wrap {
+    overflow-x: auto;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+}
+
+.data_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.data_table th,
+.data_table td {
+    padding: 12px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: left;
+    vertical-align: top;
+}
+
+.data_table th {
+    background-color: #eef5ee;
+    color: #2f3d2f;
+    white-space: nowrap;
+}
+
+.data_table .actions {
+    white-space: nowrap;
+}
+
+.data_table .actions .button {
+    margin: 2px;
+}
+
+.data_table .status_select {
+    padding: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.row_today {
+    background-color: #fffbea;
+}
+
 @media (max-width: 900px) {
 
     .intro-contant {

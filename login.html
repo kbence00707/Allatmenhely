@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgozói bejelentkezés - Állatmenhely</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="brandname">
+                <span>Állatmenhely</span>
+            </div>
+            <nav>
+                <a href="index.html">Vissza a főoldalra</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="login_page">
+        <form id="login_form" class="booking_form login_form">
+            <h2>Dolgozói bejelentkezés</h2>
+            <label>E-mail <input id="login_email" type="email" autocomplete="username" required></label>
+            <label>Jelszó <input id="login_password" type="password" autocomplete="current-password" required></label>
+            <button class="button" type="submit">Bejelentkezés</button>
+            <p id="login_message" class="message"></p>
+        </form>
+    </main>
+
+    <div id="cenzur" class="cenzur"></div>
+    <script src="common.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

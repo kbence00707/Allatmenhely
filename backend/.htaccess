@@ -1,0 +1,17 @@
+# Apache rules for the backend folder (XAMPP reads this file automatically).
+
+# Do not list the folder contents in the browser
+Options -Indexes
+
+# Never serve the .env file (it contains the database password)
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+
+# Internal folders cannot be opened directly from the browser (403 Forbidden)
+RewriteRule ^(config|controllers|helpers|middleware|models|routes|database|tests)(/|$) - [F,L]
+
+# Every request to backend/api/... goes to public/index.php (the router)
+RewriteRule ^api(/.*)?$ public/index.php [QSA,L]
